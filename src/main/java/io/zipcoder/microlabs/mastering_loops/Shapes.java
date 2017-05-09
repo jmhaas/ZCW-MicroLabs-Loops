@@ -14,11 +14,11 @@ public class Shapes {
             }
 
             for (int a = 1; a <= i; a++) {
-            if (a <= i) {
-                triangle = triangle + Integer.toString(a);
+                if (a <= i) {
+                    triangle = triangle + Integer.toString(a);
 
-                System.out.println("*");
-            }
+                    System.out.println("*");
+                }
                 System.out.println();
             }
         }
