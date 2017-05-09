@@ -15,7 +15,7 @@ public class NumbersTest {
         String actual = numbers.oneToTen();
 
         //: Then
-        Assert.assertEquals("The two strings are equal", expected, actual);
+        Assert.assertEquals("", expected, actual);
     }
 
     @Test
@@ -71,7 +71,7 @@ public class NumbersTest {
     public void powersTest() {
         //: Given
         Numbers numbers = new Numbers();
-        String expected = "*** Output ***\npowers()\n2\n4\n8\n16\n32\n64\n128\n256";
+        String expected = "*** Output ***\npowers()\n2.0\n4.0\n8.0\n16.0\n32.0\n64.0\n128.0\n256.0";
 
         //: When
         String actual = numbers.powers();

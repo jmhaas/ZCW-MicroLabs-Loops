@@ -49,7 +49,7 @@ public class Numbers {
         return output + nextOutput + filledString;
     }
 
-
+    //one part will always be the same, one part will always be random...assume the same is right, check values of random
     public String random4() {
         return "";
     }
@@ -70,12 +70,18 @@ public class Numbers {
 
     public String powers() {
 
+        String output = ("*** Output ***\n");
+        String nextOutput = ("powers()\n");
+        String filledString = "";
+        for (double i = 1; i <= 8; i++) {
+            if (i <= 7) {
+                filledString = filledString + Double.toString(Math.pow(2,i)) + "\n";
+            } else if (i == 8) {
+                filledString = filledString + Double.toString(Math.pow(2,i));
+            }
 
-
-
-
-
-        return "";
+        }
+        return output + nextOutput + filledString;
     }
 
 }
