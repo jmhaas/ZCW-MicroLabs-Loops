@@ -81,7 +81,7 @@ public class Numbers {
             }
 
         }
-        return output + nextOutput + filledString;
+        return output + nextOutput + filledString.replace(".0", "");
     }
 
 }
