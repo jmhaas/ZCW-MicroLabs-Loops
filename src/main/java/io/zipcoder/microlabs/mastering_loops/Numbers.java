@@ -12,42 +12,69 @@ public class Numbers {
         String nextOutput = ("oneToTen()\n");
         String filledString = "";
         for (int i = 1; i <= 10; i++) {
-            if (i <= 9){
+            if (i <= 9) {
                 filledString = filledString + Integer.toString(i) + "\n";
-            }
-            else{
-                filledString = filledString +Integer.toString(i);
+            } else {
+                filledString = filledString + Integer.toString(i);
             }
         }
         return output + nextOutput + filledString;
     }
-    public String oddNumbers(){
+
+    public String oddNumbers() {
         String output = ("*** Output ***\n");
         String nextOutput = ("oddNumbers()\n");
         String filledString = "";
         for (int i = 1; i <= 20; i++)
-            if(i % 2 != 0 & i < 19){
+            if (i % 2 != 0 & i < 19) {
                 filledString = filledString + Integer.toString(i) + "\n";
-            }
-            else if(i == 19){
+            } else if (i == 19) {
                 filledString = filledString + Integer.toString(i);
             }
         return output + nextOutput + filledString;
     }
 
-    public String squares(){
+    public String squares() {
+        String output = ("*** Output ***\n");
+        String nextOutput = ("squares()\n");
+        String filledString = "";
+        for (int i = 1; i <= 10; i++) {
+            if (i <= 9) {
+                filledString = filledString + Integer.toString(i * i) + "\n";
+            } else if (i == 10) {
+                filledString = filledString + Integer.toString(i * i);
+            }
+
+        }
+        return output + nextOutput + filledString;
+    }
+
+
+    public String random4() {
         return "";
     }
 
-    public String random4(){
-        return "";
+    public String even() {
+        String output = ("*** Output ***\n");
+        String nextOutput = ("even()\n");
+        String filledString = "";
+        for (int i = 1; i < 20; i++)
+            if (i % 2 == 0 & i < 17) {
+                filledString = filledString + Integer.toString(i) + "\n";
+            } else if (i == 18) {
+                filledString = filledString + Integer.toString(i);
+            }
+        return output + nextOutput + filledString;
+
     }
 
-    public String even(int n){
-        return "";
-    }
+    public String powers() {
 
-    public String powers(int n){
+
+
+
+
+
         return "";
     }
 
