@@ -15,7 +15,7 @@ public class NumbersTest {
         String actual = numbers.oneToTen();
 
         //: Then
-        Assert.assertEquals("", expected, actual);
+        Assert.assertEquals("This sumber should be counting one to ten", expected, actual);
     }
 
     @Test
@@ -28,7 +28,7 @@ public class NumbersTest {
         String actual = numbers.oddNumbers();
 
         //: Then
-        Assert.assertEquals("The two strings are equal", expected, actual);
+        Assert.assertEquals("These numbers should be odd integers from 1 - 20", expected, actual);
     }
 
     @Test
@@ -41,7 +41,7 @@ public class NumbersTest {
         String actual = numbers.squares();
 
         //: Then
-        Assert.assertEquals("The two strings are equal", expected, actual);
+        Assert.assertEquals("These numbers should be squares values of 1 - 20", expected, actual);
 
     }
 
@@ -64,7 +64,7 @@ public class NumbersTest {
         String actual = numbers.even();
 
         //: Then
-        Assert.assertEquals("The two strings are equal", expected, actual);
+        Assert.assertEquals("These numbers should be the even values between 1 - 20", expected, actual);
     }
 
     @Test
@@ -77,7 +77,7 @@ public class NumbersTest {
         String actual = numbers.powers();
 
         //: Then
-        Assert.assertEquals("The two strings are equal", expected, actual);
+        Assert.assertEquals("These numbers should be the exponential values of 2^(1-7)", expected, actual);
     }
 }
 
