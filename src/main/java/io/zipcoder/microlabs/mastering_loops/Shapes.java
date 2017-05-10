@@ -22,17 +22,17 @@ public class Shapes {
 
 
     public String tableSquare() {
-        String output = "*** Output ***\ntableSquare()\n";
+        String output = "*** Output ***\ntableSquare()";
         String tableSquare = "";
         int mult;
         for (int i = 1; i <= 4; i++) {
+            tableSquare += ("\n");
             for (int j = 1; j <= 4; j++) {
                 mult = i * j;
-                tableSquare += (" " + mult);
-                if (mult < 10) tableSquare += ("  ");
-                else if (mult < 20) tableSquare += (" ");
+                tableSquare += (mult);
+                if (mult <= 9) tableSquare += ("  ");
+                else if (mult <= 16) tableSquare += (" ");
             }
-            System.out.println();
         }
         return output + tableSquare;
     }
