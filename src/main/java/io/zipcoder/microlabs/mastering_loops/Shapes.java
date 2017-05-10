@@ -10,10 +10,10 @@ public class Shapes {
 
         for (int i = 1; i <= 6; i++) {
             for (int a = 1; a < i; a++) {
-                triangle += ("*");
+                triangle += "*";
             }
             if (i <= 5) {
-                triangle += ("\n");
+                triangle += "\n";
             }
         }
         return output + nextOutput + triangle;
@@ -31,8 +31,8 @@ public class Shapes {
                 tableSquare += "|";
                 mult = i * j;
                 tableSquare += (" " + mult);
-                if (mult <= 9) tableSquare += (" ");
-                else if (mult <= 16) tableSquare += ("");
+                if (mult <= 9) tableSquare += " ";
+                else if (mult <= 16) tableSquare += "";
             }
 
             tableSquare += "|";
