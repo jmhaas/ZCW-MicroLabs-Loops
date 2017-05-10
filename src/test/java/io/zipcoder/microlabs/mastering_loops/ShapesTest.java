@@ -26,7 +26,7 @@ public class ShapesTest {
     public void tableSquareTest(){
         //: Given
         Shapes shapes = new Shapes();
-        String expected = "*** Output ***\ntableSquare()\n1  2  3  4\n2  4  6  8\n3  6  9  12\n4  8  12 16";
+        String expected = "*** Output ***\ntableSquare()\n| 1 | 2 | 3 | 4 |\n| 2 | 4 | 6 | 8 |\n| 3 | 6 | 9 | 12|\n| 4 | 8 | 12| 16|";
 
         //: When
         String actual = shapes.tableSquare();
@@ -34,4 +34,24 @@ public class ShapesTest {
         //: Then
         Assert.assertEquals("This should be a 4x4 table square.", expected, actual);
     }
+
+    @Test
+    public void tableSquaresTest(){
+        //: Given
+        Shapes shapes = new Shapes();
+        String expected = "*** Output ***\ntableSquares(6)\n| 1 | 2 | 3 | 4 | 5 | 6 |\n| 2 | 4 | 6 | 8 | 10| 12|\n| 3 | 6 | 9 | 12| 15| 18|\n| 4 | 8 | 12| 16| 20| 24|\n" +
+                "| 5 | 10| 15| 20| 25| 30|\n| 6 | 12| 18| 24| 30| 36|";
+
+        //: When
+        String actual = shapes.tableSquares(6);
+
+        //: Then
+        Assert.assertEquals("This should be a 6x6 table square.", expected, actual);
+    }
 }
+
+
+
+
+
+

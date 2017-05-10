@@ -28,17 +28,38 @@ public class Shapes {
         for (int i = 1; i <= 4; i++) {
             tableSquare += ("\n");
             for (int j = 1; j <= 4; j++) {
+                tableSquare += "|";
                 mult = i * j;
-                tableSquare += (mult);
-                if (mult <= 9) tableSquare += ("  ");
-                else if (mult <= 16) tableSquare += (" ");
+                tableSquare += (" " + mult);
+                if (mult <= 9) tableSquare += (" ");
+                else if (mult <= 16) tableSquare += ("");
             }
+
+            tableSquare += "|";
+
         }
         return output + tableSquare;
     }
 
 
     public String tableSquares(int n) {
-        return "";
+        String output = "*** Output ***\ntableSquares(6)";
+        String tableSquares = "";
+        int mult;
+        for (int i = 1; i <= n; i++) {
+            tableSquares += ("\n");
+            for (int j = 1; j <= n; j++) {
+                tableSquares += "|";
+                mult = i * j;
+                tableSquares += (" " + mult);
+                if (mult <= 9) tableSquares += (" ");
+                else if (mult <= 10) tableSquares += ("");
+            }
+
+            tableSquares += "|";
+
+        }
+
+        return output + tableSquares;
     }
 }
