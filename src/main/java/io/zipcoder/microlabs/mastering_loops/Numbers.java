@@ -75,9 +75,9 @@ public class Numbers {
         String filledString = "";
         for (double i = 1; i <= 8; i++) {
             if (i <= 7) {
-                filledString = filledString + Double.toString(Math.pow(2,i)) + "\n";
+                filledString = filledString + Double.toString(Math.pow(2, i)) + "\n";
             } else if (i == 8) {
-                filledString = filledString + Double.toString(Math.pow(2,i));
+                filledString = filledString + Double.toString(Math.pow(2, i));
             }
 
         }
